@@ -1,9 +1,15 @@
 import { useNavigate, useLocation } from "react-router-dom";
+import { useContext } from 'react'
 import Text from "../text";
+import { Context } from "../../lib/context_provider";
 const Navigation = ({tabs}) => {
+    const { theme } = useContext(Context);
     return (
-        <div className="p-6 border-[1px]">
-            <div className="flex gap-4">
+        <div style={{ borderColor: theme.bordercolor}} className={`p-6 border-[1px]`}>
+            <div className="flex gap-4 items-center">
+                <div>
+                    <Text level={3} text={"Sahil Sian"}></Text>
+                </div>
             {tabs.map((tab) => {
                 return (
                     <div>
@@ -24,7 +30,7 @@ const NavigationTab = ({name, route}) => {
     console.log(path)
     console.log(route)
     return (
-        <div>
+        <div className="mb-2">
             <span
             onClick={() => {
                 navigate(`/${route}`)

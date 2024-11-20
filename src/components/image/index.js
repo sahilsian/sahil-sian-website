@@ -1,7 +1,7 @@
-const Image = ({alt, src, width="100px", height="100px"}) => {
+const Image = ({src, rounded = false, width="100px", height="100px"}) => {
     return (
         <div>
-            <img alt={alt} src={src} width={width} height={height}></img>
+            <img className={`${rounded && "rounded-full"} object-contain`} src={src} width={width} height={height}></img>
         </div>
     )
 }
