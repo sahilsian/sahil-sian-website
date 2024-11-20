@@ -8,7 +8,7 @@ import Headshot from "../../../public/images/sahil.jpg"
 const Home = () => {
     return (
         <div>
-            <Image src={Headshot}></Image>
+            <Image alt={"Headshot of Sahil Sian"} src={Headshot}></Image>
             <Spacer height="10px"></Spacer>
             <Text level={"1"} text={"Hi, I'm Sahil"}></Text>
             <Spacer height="10px"></Spacer>
