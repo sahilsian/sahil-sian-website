@@ -6,7 +6,7 @@ const Navigation = ({tabs}) => {
     const { theme } = useContext(Context);
     return (
         <div style={{ borderColor: theme.bordercolor}} className={`p-6 border-[1px]`}>
-            <div className="flex gap-4 items-center">
+            <div className="md:flex gap-4 items-center">
                 <div>
                     <Text level={3} text={"Sahil Sian"}></Text>
                 </div>
@@ -36,7 +36,7 @@ const NavigationTab = ({name, route}) => {
                 navigate(`/${route}`)
             }}
             className={` cursor-pointer ${isActive ? "font-semibold underline"  : ""}`}
-            ><Text text={name}></Text></span>
+            ><Text level={"p"} text={name}></Text></span>
         </div>
     )
 }

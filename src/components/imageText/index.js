@@ -4,9 +4,9 @@ import Text from "../text"
 
 const ImageText = ({source="https://placehold.co/600x400/png", title='Art Piece', description="This is a description.", link=""}) => {
     return (
-        <div>
+        <div className="min-w-[250px] w-full">
             <div>
-                <Image src={source} width="300" height="200"></Image>
+                <Image src={source} width="100%"></Image>
             </div>
             <div>
                 <Spacer height="12px"></Spacer>
