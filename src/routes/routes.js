@@ -23,7 +23,7 @@ const AppRoutes = () => {
             <div className="mx-auto max-w-[1280px] p-4 min-h-[100vh]" >
                 <Navigation tabs={tabs}>
                 </Navigation>
-                <Spacer height="40px"></Spacer>
+                <Spacer height="20px"></Spacer>
                 {
                     loading ?
                         <Loading loading={loading}></Loading>

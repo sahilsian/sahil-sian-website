@@ -1,11 +1,9 @@
-import { art } from "../../constants/constants"
 import ImageText from "../imageText"
 
-const Art = () => {
+const FourCol = ({arr}) => {
     return (
         <div className="flex flex-wrap gap-4">
-            {art.slice(0, 4).map((item) => {
-                console.log(item)
+            {arr.slice(0, 4).map((item) => {
                 return (
                     <div className="flex-1">
                     <ImageText source={item.image} title={item.mame} description={item.description} alt={item.alt}></ImageText>
@@ -16,4 +14,4 @@ const Art = () => {
     )
 }
 
-export default Art
+export default FourCol

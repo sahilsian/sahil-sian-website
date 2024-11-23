@@ -4,7 +4,8 @@ import Spacer from "../../../components/spacer";
 import ThemeSelector from "../../../components/themeSelector";
 import Image from "../../../components/image";
 import Headshot from "../../../public/images/sahil.jpg"
-import Art from "../../../components/art";
+import FourCol from "../../../components/fourCol";
+import { art } from "../../../constants/constants";
 
 const Home = () => {
     return (
@@ -17,7 +18,7 @@ const Home = () => {
             <ThemeSelector></ThemeSelector>
             <Spacer height="20px"></Spacer>
             <Text level={"2"} text={"My Art"}></Text>
-            <Art></Art>
+            <FourCol arr={art}></FourCol>
         </div>
     )
 }

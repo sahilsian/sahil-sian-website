@@ -5,7 +5,7 @@ import { Context } from "../../lib/context_provider";
 const Navigation = ({tabs}) => {
     const { theme } = useContext(Context);
     return (
-        <div style={{ borderColor: theme.bordercolor}} className={`p-6 border-[1px]`}>
+        <div style={{ borderColor: theme.bordercolor}} className={``}>
             <div className="md:flex gap-4 items-center">
                 <div>
                     <Text level={3} text={"Sahil Sian"}></Text>
@@ -13,7 +13,7 @@ const Navigation = ({tabs}) => {
             {tabs.map((tab) => {
                 return (
                     <div>
-                        <NavigationTab name={tab.name} route={tab.route}></NavigationTab>
+                        <NavigationTab theme={theme} name={tab.name} route={tab.route}></NavigationTab>
                     </div>
                 )
             })}
@@ -22,19 +22,18 @@ const Navigation = ({tabs}) => {
     )
 }
 
-const NavigationTab = ({name, route}) => {
+const NavigationTab = ({name, route, theme}) => {
     const navigate = useNavigate();
     const location = useLocation();
     const path = location.pathname;
     const isActive = route === "" ? path === "/" : path === `/${route}`;
-    console.log(path)
-    console.log(route)
     return (
         <div className="mb-2">
             <span
             onClick={() => {
                 navigate(`/${route}`)
             }}
+            style={{textDecorationColor: theme.text}}
             className={` cursor-pointer ${isActive ? "font-semibold underline"  : ""}`}
             ><Text level={"p"} text={name}></Text></span>
         </div>
