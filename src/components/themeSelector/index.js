@@ -13,10 +13,12 @@ const ThemeSelector = () => {
     const [themeCreator, setThemeCreator] = useState(false);
     const [showSelector, setShowSelector] = useState(false);
     const [ viewMore, setViewMore ] = useState(false);
-    const [ themeIndex, setThemeIndex] = useState(0);
+    const [ themeIndex, setThemeIndex] = useState(-1);
 
     useEffect(()=> {
-        setTheme(themes[themeIndex])
+        if(themeIndex != -1) {
+            setTheme(themes[themeIndex])
+        }
     }, [themeIndex])
 
     return (
@@ -47,9 +49,11 @@ const ThemeSelector = () => {
              <Spacer height="15px"></Spacer>
              {viewMore &&
                 <div>
-                    <Slider onChange={(value)=> {
+                    <Slider classNames={{
+                        
+                    }} onChange={(value)=> {
                         setThemeIndex(value)
-                    }} step={1} size="md" minValue={0} maxValue={themes.length - 1} color={"foreground"}></Slider>
+                    }} step={1} size="md" minValue={0} maxValue={themes.length - 1} ></Slider>
                 </div>
              }
              <Spacer height="15px"></Spacer>
