@@ -48,7 +48,7 @@ export const art = [
     {
         mame: '"Bridgewater, NS", Sahil Sian, Graphite, 2024',
         description: "Drawing a rainy day on a townside of Nova Scotia.",
-        image: "https://i.ibb.co/0K2dx8r/467767613-896686175513437-6791385746562001328-n.jpg",
+        image: "https://i.imgur.com/oHMabid.jpeg",
         alt: "Drawing a rainy day on a townside of Nova Scotia."
     },
     {
@@ -56,6 +56,33 @@ export const art = [
         description: "Competition piece for 2019 National Youth Remembrance Contest Canada.",
         image: "https://i.ibb.co/GCvZdRf/65779804-150885499387741-6023726016005703968-n.jpg",
         alt: "Drawing of an older veteran in remembrance of his past."
+    }
+]
+
+export const ProductUI = [
+    {
+        mame: 'Dismegle App',
+        description: "Branding and marketing for the Dismegle discord community. Developed a marketing strategy that grew Dismegle to 100,000 users.",
+        image: "https://i.imgur.com/BfpnRJU.png",
+        alt: "Dismegle Logo"
+    },
+    {
+        mame: 'Estate Lynx Branding & UI',
+        description: "Branding and UI for Red Bull Canada Basement winners, Estate Lynx.",
+        image: "https://i.imgur.com/JE3RbNL.png",
+        alt: "UX/UI Design for Estate Lynx"
+    },
+    {
+        mame: 'Rec N Roll Website Design & Development',
+        description: "Website Design and Development for Rec N Roll, a family event center in Cambelton, NB.",
+        image: "https://i.imgur.com/CZVqwyh.png",
+        alt: "Image of Wireframes"
+    },
+    {
+        mame: 'Elephant App. Research, Design & Frontend Development',
+        description: "Elephant is an application intented to connect individuals with intellectual disabilities with specialized educators. Application research, design & development.",
+        image: "https://i.imgur.com/pLtj5ie.png",
+        alt: "Slide from app presentation deck."
     }
 ]
 

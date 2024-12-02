@@ -49,14 +49,13 @@ const ThemeSelector = () => {
              <Spacer height="15px"></Spacer>
              {viewMore &&
                 <div>
-                    <Slider classNames={{
+                    {/* <Slider classNames={{
                         
                     }} onChange={(value)=> {
                         setThemeIndex(value)
-                    }} step={1} size="md" minValue={0} maxValue={themes.length - 1} ></Slider>
+                    }} step={1} size="md" minValue={0} maxValue={themes.length - 1} ></Slider> */}
                 </div>
              }
-             <Spacer height="15px"></Spacer>
              {
                  themeCreator &&
                  <div>
@@ -81,7 +80,11 @@ const ThemeSelector = () => {
                      </div>
                  </div>
              }
-             {viewMore && <Text level={6} text={"Colors generated using generative AI."}></Text>}
+             {viewMore && <div>
+                <Text level={6} text={"Colors generated using generative AI."}></Text>
+             <Spacer height="15px"></Spacer>
+             
+             </div>}
          </div>
             :
             <div className="border-[1px] max-w-[200px] p-2 flex items-center gap-4 cursor-pointer hover:opacity-70 transition-opacity" onClick={() => {
