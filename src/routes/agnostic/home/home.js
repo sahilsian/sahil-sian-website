@@ -13,10 +13,9 @@ const Home = () => {
             <Image rounded src={Headshot}></Image>
             <Spacer height="10px"></Spacer>
             <Text level={"1"} text={"Hi, I'm Sahil."}></Text>
-            <Text level={"p"} text={"Fullstack Developer, Graphic, UX/UI & Motion Designer, Illustrator, Digital Marketer, Fine Artist, Brown Guy."}></Text>
-            <Text level={"p"} text={"I put beauty in tech."}></Text>
-            <Text level={"p"} text={"- Sahil Sian"}></Text>
-            <Spacer height="20px"></Spacer>
+            <i><Text level={"p"} text={"Fruit Sticker Collector, Interpretive Dancer, Diabolo Juggler, Contemporary Art Critic."}></Text> </i>
+            <b><Text level={"p"} text={"Fullstack Developer, Award Winning Multidisciplinary Artist & Designer."}></Text> </b>
+            <Spacer height="10px"></Spacer>
             <ThemeSelector></ThemeSelector>
             <Spacer height="20px"></Spacer>
             <Text level={"2"} text={"Art & Design"}></Text>
