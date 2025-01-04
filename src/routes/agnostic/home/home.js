@@ -13,7 +13,7 @@ const Home = () => {
             <Image rounded src={Headshot}></Image>
             <Spacer height="10px"></Spacer>
             <Text level={"1"} text={"Hi, I'm Sahil."}></Text>
-            <i><Text level={"p"} text={"Fruit Sticker Collector, Interpretive Dancer, Diabolo Juggler, Contemporary Art Critic."}></Text> </i>
+            <i><Text level={"p"} text={"I like to draw and code :P"}></Text> </i>
             <b><Text level={"p"} text={"Fullstack Developer, Award Winning Multidisciplinary Artist & Designer."}></Text> </b>
             <Spacer height="10px"></Spacer>
             <ThemeSelector></ThemeSelector>
