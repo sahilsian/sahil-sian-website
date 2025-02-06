@@ -106,10 +106,10 @@ export const themes = [
         bordercolor: "#e3c5de"
     },
     {
-        name: "Fishyyyyy",
-        background: "#dcf5ff",
-        text: "#2494bf",
-        bordercolor: "#5ec6ef"
+        name: "cheese colour",
+        background: "#F0E6B3",
+        text: "#E25423",
+        bordercolor: "#E25423"
     },
     {
         name: "Vegan Mode",
