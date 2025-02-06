@@ -106,7 +106,7 @@ export const themes = [
         bordercolor: "#e3c5de"
     },
     {
-        name: "cheese colour",
+        name: "havarti",
         background: "#F0E6B3",
         text: "#E25423",
         bordercolor: "#E25423"
