@@ -14,15 +14,24 @@ const Home = () => {
             <Spacer height="10px"></Spacer>
             <Text level={"1"} text={"Hi, I'm Sahil."}></Text>
             <i><Text level={"p"} text={"I like to draw and code :P"}></Text> </i>
-            <b><Text level={"p"} text={"Fullstack Developer, Award Winning Multidisciplinary Artist & Designer."}></Text> </b>
+            <b><Text level={"p"} text={"Fullstack Developer, Multidisciplinary Artist & UX/UI/Graphic Designer. React Pro."}></Text> </b>
             <Spacer height="10px"></Spacer>
             <ThemeSelector></ThemeSelector>
             <Spacer height="20px"></Spacer>
+            <Text level={"2"} text={"Apps"}></Text>
+            <Spacer height="10px"></Spacer>
+            <FourCol arr={ProductUI} start={4} end={8}></FourCol>
+            <Spacer height="20px"></Spacer>
             <Text level={"2"} text={"Art & Design"}></Text>
+            <Spacer height="10px"></Spacer>
             <FourCol arr={art}></FourCol>
+            <Spacer height="20px"></Spacer>
+            <FourCol arr={art} start={4} end={8}></FourCol>
             <Spacer height="40px"></Spacer>
             <Text level={"2"} text={"Product & UI"}></Text>
+            <Spacer height="10px"></Spacer>
             <FourCol arr={ProductUI}></FourCol>
+            <Spacer height="40px"></Spacer>
         </div>
     )
 }
