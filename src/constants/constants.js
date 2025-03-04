@@ -115,7 +115,7 @@ export const ProductUI = [
         video: false
     },
     {
-        name: '"Nextjs Headless WordPress App with React and WPGraphQL", Sahil Sian, Mobile Application, 2024',
+        name: '"Nextjs Headless WordPress App with React and WPGraphQL", Sahil Sian, Web Application, 2024',
         description: "Developed a WordPress app using React, Nextjs and WP GraphQL. Builds highly optimized WordPress websites fast using a dynamic component library that includes 12 layout components and 25 compound components.",
         image: "https://i.imgur.com/aWWgnsv.png",
         alt: "Image explaining selling points on my react/wpgraphql app",
